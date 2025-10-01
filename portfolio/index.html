@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Portfolio - Monitoring Demo</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; }
+        .container { max-width: 800px; margin: 0 auto; }
+        .metrics { background: #f5f5f5; padding: 20px; border-radius: 5px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Harshal Portfolio Website</h1>
+        <p>This is a demo site for AWS Monitoring System</p>
+        
+        <div class="metrics">
+            <h3>System Metrics (Monitored by CloudWatch):</h3>
+            <ul>
+                <li>CPU Utilization</li>
+                <li>Network Traffic</li>
+                <li>Status Checks</li>
+            </ul>
+        </div>
+        
+        <h3>Load Generator:</h3>
+        <button onclick="generateLoad()">Generate CPU Load (Trigger Alarm)</button>
+        
+        <script>
+            function generateLoad() {
+                fetch('/generate-load')
+                .then(response => alert('CPU load generated! Check your email for alarm.'))
+                .catch(err => alert('Load generation started'));
+            }
+        </script>
+    </div>
+</body>
+</html>
