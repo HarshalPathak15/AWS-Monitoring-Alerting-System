@@ -3,6 +3,7 @@
 This project demonstrates a cloud-native monitoring and alerting system using **AWS services** including CloudWatch, SNS, Lambda, and CloudTrail. It automatically monitors key AWS resources (EC2, RDS, ALB), generates alarms, sends notifications, and even performs automatic remediation actions.
 
 ## Architecture Diagram 
+<img width="804" height="241" alt="image" src="https://github.com/user-attachments/assets/e9a06bb2-99fc-43e3-ad7f-1627ba87802a" />
 
 
 ## 🔧 Tools & Services Used
@@ -46,9 +47,10 @@ This project demonstrates a cloud-native monitoring and alerting system using **
 7. 📝 CLOUDTRAIL records everything for security
    │
 8. ✅ Server comes back healthy - problem solved automatically!
-```
+
 ## 👨‍💻 Author
 Harshal Pathak
 
 LinkedIn: https://www.linkedin.com/in/harshal-pathak-4b6754259/
 Portfolio: https://harshal15.framer.website/
+```
